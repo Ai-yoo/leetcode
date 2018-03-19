@@ -18,7 +18,7 @@ public class Practice680 {
         int j = s.length() - 1;
         while (i < j) {
             if (s.charAt(i++) != s.charAt(j--)) {
-                return isVali(s, i + 1, j) || isVali(s, i, j - 1);
+                return isVali(s, i - 1, j) || isVali(s, i, j + 1);
             }
         }
         return true;
