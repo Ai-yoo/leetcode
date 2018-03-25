@@ -70,12 +70,3 @@ public class Practice653 {
         return dfs(root.left, set, k) || dfs(root.right, set, k);
     }
 }
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
