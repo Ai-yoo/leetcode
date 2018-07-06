@@ -47,4 +47,31 @@ public class practice88 {
         }
         return merge;
     }
+
+    /**
+     * 题目更新之后
+     * @param nums1 数组1
+     * @param m 数组1长度
+     * @param nums2 数组2
+     * @param n 数组2长度
+     */
+    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+        int[] newarray = new int[m + n];
+        int i = 0, j = 0, k = 0;
+        while (i < m && j < n) {
+            newarray[k++] = nums1[i] < nums2[j] ? nums1[i++] : nums2[j++];
+        }
+        while (i < m) {
+            newarray[k++] = nums1[i++];
+        }
+        while (j < n) {
+            newarray[k++] = nums2[j++];
+        }
+        for (int l = 0; l < newarray.length; l++) {
+            nums1[l] = newarray[l];
+        }
+//        for (int a : nums1) {
+//            System.out.println(a);
+//        }
+    }
 }
