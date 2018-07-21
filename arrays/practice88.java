@@ -1,4 +1,4 @@
-package arrays;
+﻿package arrays;
 
 
 /**
@@ -70,8 +70,5 @@ public class practice88 {
         for (int l = 0; l < newarray.length; l++) {
             nums1[l] = newarray[l];
         }
-//        for (int a : nums1) {
-//            System.out.println(a);
-//        }
     }
 }
